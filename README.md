@@ -5,7 +5,7 @@
 ![Linux](https://img.shields.io/badge/os-linux-green.svg?style=flat)
 [![Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg?style=flat)](LICENSE.md)
 
-A Package defining some helpful protocols when writing with Swift
+A Package defining some helpful protocols to use when writing with Swift
 
 ## Requirements
 

@@ -31,7 +31,9 @@ extension UInt64: DefaultInit { }
 // MARK: Floats
 extension Float: DefaultInit { }
 //extension Float16: DefaultInit { }
+#if arch(x86_64)
 extension Float80: DefaultInit { }
+#endif
 extension Double: DefaultInit { }
 
 // MARK: Objects

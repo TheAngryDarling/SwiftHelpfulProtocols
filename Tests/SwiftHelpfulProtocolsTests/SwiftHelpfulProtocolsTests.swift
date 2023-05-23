@@ -1,6 +1,10 @@
 import XCTest
 import Dispatch
+#if DEBUG
 @testable import SwiftHelpfulProtocols
+#else
+import SwiftHelpfulProtocols
+#endif
 
 final class SwiftHelpfulProtocolsTests: XCTestCase {
     func testDefaultInits() {
@@ -24,7 +28,9 @@ final class SwiftHelpfulProtocolsTests: XCTestCase {
         
         defInit(Float.self)
         //definit(Float16.self)
+        #if arch(x86_64)
         defInit(Float80.self)
+        #endif
         defInit(Double.self)
         
         defInit(Array<String>.self)
